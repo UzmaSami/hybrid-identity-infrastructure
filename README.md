@@ -49,50 +49,7 @@ from or what resource they are accessing.
 
 ---
 
-## Environment Architecture
 
-
-PHYSICAL LAYER
-══════════════════════════════════════════
-Windows 11 Host Machine
-└── Microsoft Hyper-V (Hypervisor)
-    ├── UzmaSamiDC01
-    │   └── Windows Server 2022
-    │       ├── Active Directory DS
-    │       ├── DNS Server
-    │       ├── Group Policy Management
-    │       ├── Azure AD Connect
-    │       └── Azure Arc Agent (AMA)
-    │
-    └── Client VM
-        └── Windows 10/11
-            └── Domain Joined
-
-HYBRID CONNECTIVITY LAYER
-══════════════════════════════════════════
-Azure AD Connect
-(Password Hash Sync + Seamless SSO)
-         │
-         ▼
-Microsoft Entra ID ◄──── Single Identity Plane
-         │
-         ▼
-Azure Arc ──────────────► Cloud Management
-                          of On-Prem Server
-
-CLOUD SECURITY LAYER
-══════════════════════════════════════════
-Microsoft Entra ID
-├── Synced identities from on-prem AD
-├── Foundation for Conditional Access
-├── Foundation for PIM
-└── Foundation for Identity Protection
-
-Azure Arc Connected Server
-├── Defender for Cloud coverage
-├── Log Analytics data collection
-├── Azure Policy enforcement
-└── Microsoft Sentinel integration
 
 
 ---
