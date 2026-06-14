@@ -1,7 +1,7 @@
 # Hybrid-identity-infrastructure
 ## Overview
 
-This project documents the design and
+This work documents the design and
 implementation of a production hybrid identity
 infrastructure — connecting an on-premises
 Windows Server 2022 Active Directory environment
