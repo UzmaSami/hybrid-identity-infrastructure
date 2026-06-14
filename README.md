@@ -48,9 +48,8 @@ regardless of where a user is authenticating
 from or what resource they are accessing.
 
 ---
-
-
-
+## Architecture
+![Architecture](docs/architecture-diagram.png)
 
 ---
 
