@@ -17,13 +17,6 @@ and you have a single identity plane that
 security controls can be built upon consistently
 across cloud and on-premises.
 
-This is the foundation layer of a 14-project
-Enterprise Hybrid Security Architecture.
-Everything built in subsequent projects depends
-on what is established here.
-
----
-
 ## The Problem This Solves
 
 Organisations that move to Azure without
